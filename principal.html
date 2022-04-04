@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fmcontabilidade</title>
+    <link rel="stylesheet" href="principal.css">
+    <script>
+        function mudafoto(foto){
+            document.getElementById("icone").src = foto;
+        }
+    </script>
+</head>
+<body>
+<div id="interface">
+    <nav id="pesquisa">
+    <header id="cabecalho">
+        <h1>Menu Principal:</h1>
+         <ul id="menu">
+             <li onmouseover="mudafoto('home.png')" onmouseout="mudafoto('calculadora.png')"><a href="principal.html">Home</a></li>
+             <li onmouseover="mudafoto('fotos.png')" onmouseout="mudafoto('calculadora.png')"><a href="fotos.html">Fotos</a></li>
+             <li onmouseover="mudafoto('sobre-nos.png')" onmouseout="mudafoto('calculadora.png')"><a href="sobre-nos.html">Sobre nós</a></li>
+             <li onmouseover="mudafoto('contato.png')" onmouseout="mudafoto('calculadora.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+         </ul>
+    </header>
+    </nav>
+    <img src="calculadora.png" id="icone">
+    <h1>FmContabilidade</h1>
+    <h2>Venha trabalhar com a gente</h2>
+    <figure id="foto">
+        <img src="foto.jpg" id="foto1">
+        <figcaption>
+            Estamos a toda disposição!
+        </figcaption>
+    </figure>
+    <footer id="rodape">
+        <a href="" target="_blank">Facebook</a> -  <a href="" target="_blank">Instagram</a> <br/>
+        <a href="" target="_blank">Flavia Martins</a> -  <a href="" target="_blank">Marcelo Martins</a> <br/>
+        É sempre um prazer!
+    </footer>
+</div>
+</body>
+</html>

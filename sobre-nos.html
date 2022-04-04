@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>sobre-nós</title>
+    <script>
+        function mudafoto(foto){
+            document.getElementById("icone").src = foto;
+        }
+    </script>
+    <link rel="stylesheet" href="principal.css">
+    <style>
+        img#foto2{
+            border: 8px solid black;
+            margin-left: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="interface">
+<nav id="pesquisa">
+    <header id="cabecalho">
+        <h1>Menu Principaal:</h1>
+        <ul id="menu">
+            <li onmouseover="mudafoto('home.png')" onmouseout="mudafoto('sobre-nos.png')"><a href="principal.html">Home</a></li>
+            <li onmouseover="mudafoto('fotos.png')" onmouseout="mudafoto('sobre-nos.png')"><a href="fotos.html">Fotos</a></li>
+            <li onmouseover="mudafoto('sobre-nos.png')" onmouseout="mudafoto('sobre-nos.png')"><a href="sobre-nos.html">Sobre nós</a></li>
+            <li onmouseover="mudafoto('contato.png')" onmouseout="mudafoto('sobre-nos.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+        </ul>
+    </header>
+</nav>
+<img src="calculadora.png" id="icone">
+    <h1>Sobre nós</h1>
+    <h2>Flávia Martins</h2> <br/>
+    Contadora, formada há quase 20 anos, ... <br/>
+    <h2>Marcelo Martins</h2> <br/>
+    Contador, ... <br/>
+    <br/>
+    <img src="fundo" id="foto2">
+    <footer id="rodape">
+        <a href="" target="_blank">Facebook</a> -  <a href="" target="_blank">Instagram</a> <br/>
+        <a href="" target="_blank">Flavia Martins</a> -  <a href="" target="_blank">Marcelo Martins</a> <br/>
+        É sempre um prazer!
+    </footer>
+</div>
+</body>
+</html>

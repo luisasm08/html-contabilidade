@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>fale-conosco</title>
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="fale-conosco.css">
+    <script>
+        function total_pagar(){
+            qtd = parseInt(document.getElementById("cqtd").value);
+            tot = qtd * 300;
+            document.getElementById("ctot").value = tot;
+        }
+        function mudafoto(foto){
+            document.getElementById("icone").src = foto;
+        }
+    </script>
+</head>
+<body>
+<div id="interface">
+    <nav id="pesquisa">
+        <header id="cabecalho">
+            <h1>Menu Principaal:</h1>
+            <ul id="menu">
+                <li onmouseover="mudafoto('home.png')" onmouseout="mudafoto('contato.png')"><a href="principal.html">Home</a></li>
+                <li onmouseover="mudafoto('fotos.png')" onmouseout="mudafoto('contato.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudafoto('sobre-nos.png')" onmouseout="mudafoto('contato.png')"><a href="sobre-nos.html">Sobre nós</a></li>
+                <li onmouseover="mudafoto('contato.png')" onmouseout="mudafoto('contato.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+            </ul>
+        </header>
+    </nav>
+    <img src="calculadora.png" id="icone">
+<h1>Entre em contato com a gente</h1>
+<form method="post" action="mailto:luisamartins1112@gmail.com" oninput="total_pagar();">
+    <fieldset id="usuario">
+        <legend>Dados do cliente:</legend>
+        <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" placeholder="Nome completo" maxlength="40" size="20"/></p>
+        <p><label for="cnasc">Data de nascimento:</label><input type="date" name="tnasc" id="cnasc"></p>
+        <fieldset id="sexo">
+            <legend>Sexo:</legend>
+            <p><input type="radio" name="tsexo" id="cmasc" checked/><label for="cmasc">Masculino</label></p>
+            <p><input type="radio" name="tsexo" id="cfem"/><label for="cfem">Feminino</label></p>
+        </fieldset>
+        <p><label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail"/></p>
+    </fieldset>
+    <fieldset id="endereco">
+        <legend>Endereço:</legend>
+        <p><label for="clog">Logradouro:</label><input type="text" name="tlog" id="clog" placeholder="Rua, Av., Trav.,..."/></p>
+        <p><label for="cnum">Número:</label><input type="number" name="tnum" id="cnum" min="0" max="99999"/></p>
+        <p><label for="cest">Estado:</label><select name="test" id="cest">
+            <optgroup label="Região Sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+            </optgroup>
+        </select></p>
+       <p><label for="ccid">Cidade:</label><input type="text" name="tcid" id="ccid" list="cidades"/></p>
+        <datalist id="cidades">
+            <option value="Niterói"></option>
+            <option value="Rio de Jnaeiro"></option>
+            <option value="Maricá"></option>
+            <option value="Vila da Penha"></option>
+            <option value="Caxias"></option>
+        </datalist>
+    </fieldset>
+    <fieldset id="mensagem">
+        <legend>Nos deixe uma mensagem:</legend>
+        <p><label for="curg">Grau de urgência:</label>Mín<input type="range" name="turg" id="curg" min="0" max="10"/>Máx</p>
+        <p><label for="cmsg">Mensagem:</label><textarea name="tmsg" id="cmsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+    </fieldset>
+    <fieldset id="pagamento">
+        <legend>Pedido:</legend>
+        <p><label for="cqtd">Quantidade de serviços desejados:</label><input type="number" name="tqtd" id="cqtd" min="0" max="10"/></p>
+        <p><label for="ctot">Preço total:</label><input type="text" name="ttot" id="ctot" placeholder="preço total" readonly/></p>
+    </fieldset>
+    <input type="submit" value="Enviar"/>
+</form>
+    <footer id="rodape">
+        <a href="" target="_blank">Facebook</a> -  <a href="" target="_blank">Instagram</a> <br/>
+        <a href="" target="_blank">Flavia Martins</a> -  <a href="" target="_blank">Marcelo Martins</a> <br/>
+        É sempre um prazer!
+    </footer>
+</div>
+</body>
+</html>

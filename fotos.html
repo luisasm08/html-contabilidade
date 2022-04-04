@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>fotos</title>
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="fotos.css">
+    <script>
+        function mudafoto(foto){
+            document.getElementById("icone").src = foto;
+        }
+    </script>
+</head>
+<body>
+<div id="interface">
+    <nav id="pesquisa">
+        <header id="cabecalho">
+            <h1>Menu Principaal:</h1>
+            <ul id="menu">
+                <li onmouseover="mudafoto('home.png')" onmouseout="mudafoto('fotos.png')"><a href="principal.html">Home</a></li>
+                <li onmouseover="mudafoto('fotos.png')" onmouseout="mudafoto('fotos.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudafoto('sobre-nos.png')" onmouseout="mudafoto('fotos.png')"><a href="sobre-nos.html">Sobre nós</a></li>
+                <li onmouseover="mudafoto('contato.png')" onmouseout="mudafoto('fotos.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+            </ul>
+        </header>
+    </nav>
+    <img src="calculadora.png" id="icone">
+    <h3>Algumas de nossas fotos:</h3>
+    <ul id="album">
+        <li id="foto01"><span>Primeira</span></li>
+        <li id="foto02"><span>Segunda</span></li>
+        <li id="foto03"><span>Terceira</span></li>
+        <li id="foto04"><span>Quarta</span></li>
+        <li id="foto05"><span>Quinta</span></li>
+        <li id="foto06"><span>Sexta</span></li>
+    </ul>
+    <footer id="rodape">
+        <a href="" target="_blank">Facebook</a> -  <a href="" target="_blank">Instagram</a> <br/>
+        <a href="" target="_blank">Flavia Martins</a> -  <a href="" target="_blank">Marcelo Martins</a> <br/>
+        É sempre um prazer!
+    </footer>
+</body>
+</html>

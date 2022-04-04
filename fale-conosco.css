@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+form{
+    width: 800px;
+    margin: auto;
+}
+fieldset{
+    border-color: #cecece;
+    padding: 10px;
+}
+fieldset#usuario{
+    background: url("icone-contato.png") no-repeat 95% 95%;
+}
+fieldset#endereco{
+    background: url("icone-endereco.png") no-repeat 95% 95%;
+}
+fieldset#mensagem{
+    background: url("icone-mensagem.png") no-repeat 95% 95%;
+}
+fieldset#pagamento{
+    background: url("icone-pagamento.png") no-repeat 95% 95%;
+}
+fieldset#sexo{
+    width: 400px;
+}
+footer#rodape{
+    text-align: center;
+    padding: 10px;
+}
